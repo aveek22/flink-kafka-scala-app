@@ -1,1 +1,11 @@
 .venv/
+
+
+# Scala files
+target/
+project/
+
+
+# VS Code Files
+.metals/
+.vscode/
