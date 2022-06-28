@@ -1,4 +1,3 @@
-from pydoc_data.topics import topics
 from kafka import KafkaConsumer
 import json
 

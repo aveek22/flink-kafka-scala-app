@@ -17,7 +17,19 @@ A python program generates random clickstream data.
 It pushes the data into the kafka topic `input-kafka-topic`.
 
 
-## Flink App
+### Flink App
 - Read data from the `input-kafka-topic`.
 - Aggregate the data in realtime for every 60 seconds.
 - Write the data into the `output-kafka-topic`.
+
+
+## Quickstart Python Clickstream Producer
+Produce clickstream data to the input kafka topic...
+```bash
+cd 01-kafka/
+docker-compose up -d
+
+cd ../02-python-producer/
+source .venv/bin/activate
+python clickstream-producer.py 50 1
+```
