@@ -26,6 +26,7 @@ version := "1.0"
 // You can define other libraries as dependencies in your build like this:
 
 libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "2.1.1"
+libraryDependencies += "org.apache.flink" %% "flink-streaming-scala" % "1.14.4"
 libraryDependencies += "org.apache.flink" %% "flink-connector-kafka" % "1.14.5"
 
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
