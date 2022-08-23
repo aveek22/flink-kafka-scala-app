@@ -1,0 +1,4 @@
+docker run -u $(id -u) -p 8080:8080 --rm -v $PWD/logs:/logs -v $PWD/notebook:/notebook \
+  -v /Users/adas/applications/flink-1.15.0:/opt/flink \
+  -e FLINK_HOME=/opt/flink \
+  -e ZEPPELIN_LOG_DIR='/logs' -e ZEPPELIN_NOTEBOOK_DIR='/notebook' --name zeppelin apache/zeppelin:0.10.1

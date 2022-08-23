@@ -1,0 +1,16 @@
+version: '2.1'
+
+services:
+  zeppelin:
+    image: apache/zeppelin:0.10.1
+    platform: linux/x86_64
+    hostname: zepp1
+    container_name: zepp1
+    ports:
+      - "8888:8080"
+    
+    environment:
+      FLINK_HOME: /Users/adas/applications/flink-1.15.0/
+      UID: 502
+    #   ZOOKEEPER_SERVER_ID: 1
+    #   ZOOKEEPER_SERVERS: zoo1:2888:3888
